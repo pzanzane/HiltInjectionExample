@@ -1,4 +1,4 @@
-package com.example.hiltinjectionexample
+package com.example.hiltinjectionexample.ui.activity
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
