@@ -1,0 +1,13 @@
+[versions]
+retrofit = "2.9.0"
+hilt = "2.44"
+
+[libraries]
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+hilt = { group = "com.google.dagger", name ="hilt-android", version.ref = "hilt" }
+kapt-hilt = { group = "com.google.dagger", name ="hilt-compiler", version.ref = "hilt" }
+
+[plugins]
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt"}
+
+
