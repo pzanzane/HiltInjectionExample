@@ -1,16 +1,8 @@
 plugins {
     id 'com.android.application'
-    id 'kotlin-kapt'
     alias libs.plugins.kotlin.android
     alias libs.plugins.hilt
-}
-
-allprojects {
-    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
-        kotlinOptions {
-            jvmTarget = "1.8"
-        }
-    }
+    id 'kotlin-kapt'
 }
 
 android {
