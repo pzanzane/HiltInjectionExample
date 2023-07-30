@@ -11,7 +11,7 @@ import kotlinx.coroutines.withContext
 class UsersRepository(val remoteDataSource: IUsersRemoteDataSource,
 val ioDispatcher: CoroutineDispatcher) {
 
-    suspend fun userList(page: Int): RepositoryResult {
+    suspend fun userList(page: Int): RepositoryResult<List<User>> {
 
         return withContext(ioDispatcher) {
             val datasourceResult = remoteDataSource.userList(page)
