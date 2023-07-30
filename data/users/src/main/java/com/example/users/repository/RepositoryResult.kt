@@ -1,4 +1,4 @@
-package com.example.hiltinjectionexample.repository
+package com.example.users.repository
 
 sealed interface RepositoryResult<T>
 class SuccessRepositoryResult<T>(val data: T): RepositoryResult<T>

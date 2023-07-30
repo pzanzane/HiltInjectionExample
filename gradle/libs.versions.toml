@@ -1,12 +1,15 @@
+# Version Catalog for Multi Module Project
 [versions]
 retrofit = "2.9.0"
 hilt = "2.44"
 jvm = "1.7.20"
+coroutine = "1.3.9"
 
 [libraries]
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 hilt = { group = "com.google.dagger", name ="hilt-android", version.ref = "hilt" }
 kapt-hilt = { group = "com.google.dagger", name ="hilt-compiler", version.ref = "hilt" }
+coroutine = { group = "org.jetbrains.kotlinx", name ="kotlinx-coroutines-android", version.ref = "coroutine" }
 
 [plugins]
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt"}

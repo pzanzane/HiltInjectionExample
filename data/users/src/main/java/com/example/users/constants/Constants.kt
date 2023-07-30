@@ -1,4 +1,4 @@
-package com.example.hiltinjectionexample.constants
+package com.example.users.constants
 
 internal const val END_POINT = "https://reqres.in"
 internal const val API_USERS_LIST = "/api/users"

@@ -1,4 +1,4 @@
-package com.example.hiltinjectionexample.datasource.users
+package com.example.users.repository
 
 data class ResponseUsers(val data: List<User>)
 

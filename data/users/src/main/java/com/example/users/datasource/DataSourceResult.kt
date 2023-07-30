@@ -1,4 +1,4 @@
-package com.example.hiltinjectionexample.datasource
+package com.example.users.datasource
 
 sealed interface DataSourceResult<T>
 class SuccessDataSourceResult<T>(val data: T) : DataSourceResult<T>

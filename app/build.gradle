@@ -66,6 +66,7 @@ dependencies {
     implementation libs.retrofit
     //Hilt
     implementation libs.hilt
+    implementation project(path: ':data:users')
     kapt libs.kapt.hilt
 
     testImplementation 'junit:junit:4.13.2'

@@ -1,14 +1,12 @@
-package com.example.hiltinjectionexample.datasource.users
+package com.example.users.datasource
 
-import com.example.hiltinjectionexample.datasource.DataSourceResult
-import com.example.hiltinjectionexample.datasource.ErrorDataSourceResult
-import com.example.hiltinjectionexample.datasource.SuccessDataSourceResult
-import com.example.hiltinjectionexample.datasource.retrofit.UsersRestClient
+import com.example.users.repository.User
+import com.example.users.retrofit.UsersRestClient
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 
 class UsersRemoteDataSource(private val usersRestClient: UsersRestClient,
-                            val ioDispatcher: CoroutineDispatcher
+                            private val ioDispatcher: CoroutineDispatcher
 ) : IUsersRemoteDataSource {
     override suspend fun userList(page: Int): DataSourceResult<List<User>> {
 
