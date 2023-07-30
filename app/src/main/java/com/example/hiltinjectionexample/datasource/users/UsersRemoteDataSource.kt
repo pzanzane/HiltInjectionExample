@@ -1,6 +1,6 @@
 package com.example.hiltinjectionexample.datasource.users
 
-import com.example.hiltinjectionexample.retrofit.UsersRestClient
+import com.example.hiltinjectionexample.datasource.retrofit.UsersRestClient
 
 class UsersRemoteDataSource(private val usersRestClient: UsersRestClient) {
 

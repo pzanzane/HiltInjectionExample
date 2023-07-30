@@ -1,6 +1,7 @@
 [versions]
 retrofit = "2.9.0"
 hilt = "2.44"
+jvm = "1.7.20"
 
 [libraries]
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
@@ -9,5 +10,7 @@ kapt-hilt = { group = "com.google.dagger", name ="hilt-compiler", version.ref = 
 
 [plugins]
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt"}
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jvm" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "jvm" }
 
 

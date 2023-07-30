@@ -1,6 +1,6 @@
 package com.example.hiltinjectionexample.repository
 
-class DummyRepository {
+class UsersRepository {
 
     suspend fun userList() {
 

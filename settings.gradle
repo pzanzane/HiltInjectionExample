@@ -14,4 +14,3 @@ dependencyResolutionManagement {
 }
 rootProject.name = "HiltInjectionExample"
 include ':app'
-include ':data:users'
